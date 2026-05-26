@@ -1,6 +1,6 @@
-# Relojoaria Seculus - Hyper Premium
+# Relojoaria Seculus - Hyper Premium Admin Smart
 
-Projeto React + Vite em JSX, com visual premium inspirado em joalherias de alto padrão, sem copiar marcas, imagens ou layout proprietário.
+Projeto React + Vite em JSX para loja premium de relojoaria/joalheria.
 
 ## Rodar localmente
 
@@ -10,15 +10,9 @@ npm install
 npm run dev
 ```
 
-## Build
+## Painel Admin
 
-```bash
-npm run build
-```
-
-## Admin
-
-Acesse `/admin` ou clique discretamente em Admin no cabeçalho.
+Acesse `/admin` ou `#/admin`.
 
 Senha inicial:
 
@@ -26,21 +20,19 @@ Senha inicial:
 admin123
 ```
 
-## Recursos incluídos
+## Novidades desta versão
 
-- Hero carrossel
-- Catálogo com busca, filtros e ordenação
-- Favoritos
-- Carrinho lateral
-- Cupons em React
-- Checkout visual
-- Finalização pelo WhatsApp
-- Cookies com preferências
-- Instagram manual editável
-- Painel admin com edição de conteúdo
-- Exportação/importação JSON
-- Serviço separado para futura integração com Stripe ou Mercado Pago
+- Cadastro de produto mais inteligente.
+- Tipo de peça com detecção automática por nome/categoria.
+- Ao escolher ou digitar anel/aliança, aparece seleção de aros em caixas.
+- Aros disponíveis de 08 a 35.
+- Materiais e acabamentos de joalheria em caixas selecionáveis.
+- Possibilidade de adicionar material/acabamento personalizado.
+- Imagens por URL ou upload, com múltiplas imagens por produto.
+- Produtos cadastrados ficam em linhas compactas com miniatura.
+- Linha pode ser expandida para ver detalhes, aros, materiais e imagens.
+- Layout público premium mantido.
 
-## Pagamentos futuros
+## Pagamentos
 
-A lógica base está em `src/services/checkoutService.js`. A função `createPaymentSession` pode ser conectada futuramente a um back-end seguro com Stripe, Mercado Pago ou outro gateway.
+O checkout finaliza pelo WhatsApp. A estrutura em `src/services/checkoutService.js` está preparada para futura integração com Stripe ou Mercado Pago.
